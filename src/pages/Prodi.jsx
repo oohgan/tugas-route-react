@@ -65,7 +65,6 @@ function Prodi() {
                                 <a href="" onClick={() => navigate(`/mahasiswa/${getNPM(angkatan.tahun_masuk, prodi.kode_prodi, mahasiswa.id)}`)}>
                                   {getNPM(angkatan.tahun_masuk,prodi.kode_prodi,mahasiswa.id)}
                                 </a>
-                                {/* <Link to={"/mahasiswa/{getNPM}"}>{getNPM(angkatan.tahun_masuk,prodi.kode_prodi,mahasiswa.id)}</Link> */}
                               </td>
                               <td>{mahasiswa.nama}</td>
                               <td>{mahasiswa.jenis_kelamin=="P" ? "Perempuan" : "Laki-laki"}</td>

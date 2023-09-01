@@ -9,9 +9,6 @@ function Mahasiswa() {
   const NPM = useParams();
   console.log(NPM);
 
-  function find_npm(params) {
-    
-  }
   useEffect(() => {
     const fetchData= async () => {
       const res = await axios.get("https://strapi-rygs.onrender.com/api/prodis");
