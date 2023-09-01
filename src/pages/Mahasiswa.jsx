@@ -7,12 +7,13 @@ import { useParams } from 'react-router-dom';
 function Mahasiswa() {
   const [mahasiswa, setMahasiswas] = useState([])
   const NPM = useParams();
+  
   console.log(NPM);
 
   useEffect(() => {
     const fetchData= async () => {
       const res = await axios.get("https://strapi-rygs.onrender.com/api/prodis");
-      setMahasiswas(res.data.data[0]);
+      setMahasiswas(res.data.data);
     };
     fetchData();
   }, [NPM]);
